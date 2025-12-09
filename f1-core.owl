@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns="http://example.org/f1#"
+         xml:base="http://example.org/f1/core"
+         xmlns:f1="http://example.org/f1#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+  <owl:Ontology rdf:about="http://example.org/f1/core">
+    <rdfs:label>F1 Core</rdfs:label>
+  </owl:Ontology>
+
+  <!-- Upper classes -->
+  <owl:Class rdf:about="http://example.org/f1#F1"/>
+  <owl:Class rdf:about="http://example.org/f1#Organization">
+    <rdfs:subClassOf rdf:resource="http://example.org/f1#F1"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/f1#Person">
+    <rdfs:subClassOf rdf:resource="http://example.org/f1#F1"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/f1#Location">
+    <rdfs:subClassOf rdf:resource="http://example.org/f1#F1"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/f1#Country">
+    <rdfs:subClassOf rdf:resource="http://example.org/f1#Location"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/f1#EventThing">
+    <rdfs:subClassOf rdf:resource="http://example.org/f1#F1"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/f1#CompetitionAsset">
+    <rdfs:subClassOf rdf:resource="http://example.org/f1#F1"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/f1#Quality">
+    <rdfs:subClassOf rdf:resource="http://example.org/f1#F1"/>
+  </owl:Class>
+
+  <!-- Common roles -->
+  <owl:Class rdf:about="http://example.org/f1#Team">
+    <rdfs:subClassOf rdf:resource="http://example.org/f1#Organization"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/f1#Constructor">
+    <rdfs:subClassOf rdf:resource="http://example.org/f1#Team"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/f1#Driver">
+    <rdfs:subClassOf rdf:resource="http://example.org/f1#Person"/>
+  </owl:Class>
+
+  <!-- Keep core pillars separate to avoid unintended overlaps -->
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <rdf:Description rdf:about="http://example.org/f1#Person"/>
+      <rdf:Description rdf:about="http://example.org/f1#Organization"/>
+      <rdf:Description rdf:about="http://example.org/f1#Location"/>
+      <rdf:Description rdf:about="http://example.org/f1#CompetitionAsset"/>
+      <rdf:Description rdf:about="http://example.org/f1#EventThing"/>
+      <rdf:Description rdf:about="http://example.org/f1#Quality"/>
+    </owl:members>
+  </owl:AllDisjointClasses>
+
+  <!-- A few generic object properties used across modules -->
+  <owl:ObjectProperty rdf:about="http://example.org/f1#locatedInCountry">
+    <rdfs:domain rdf:resource="http://example.org/f1#Location"/>
+    <rdfs:range rdf:resource="http://example.org/f1#Country"/>
+  </owl:ObjectProperty>
+
+</rdf:RDF>

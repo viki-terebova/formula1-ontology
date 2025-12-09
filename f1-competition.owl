@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns="http://example.org/f1#"
+         xml:base="http://example.org/f1/competition"
+         xmlns:f1="http://example.org/f1#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+  <owl:Ontology rdf:about="http://example.org/f1/competition">
+    <rdfs:label>F1 Competition</rdfs:label>
+    <owl:imports rdf:resource="http://example.org/f1/core"/>
+    <owl:imports rdf:resource="http://example.org/f1/events"/>
+    <owl:imports rdf:resource="http://example.org/f1/vehicle"/>
+    <owl:imports rdf:resource="http://example.org/f1/teams"/>
+  </owl:Ontology>
+
+  <owl:Class rdf:about="http://example.org/f1#Participation">
+    <rdfs:subClassOf rdf:resource="http://example.org/f1#EventThing"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/f1#Penalty">
+    <rdfs:subClassOf rdf:resource="http://example.org/f1#EventThing"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://example.org/f1#FinishStatus">
+    <rdfs:subClassOf rdf:resource="http://example.org/f1#Quality"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.org/f1#Finished"><rdfs:subClassOf rdf:resource="http://example.org/f1#FinishStatus"/></owl:Class>
+  <owl:Class rdf:about="http://example.org/f1#DNF"><rdfs:subClassOf rdf:resource="http://example.org/f1#FinishStatus"/></owl:Class>
+  <owl:Class rdf:about="http://example.org/f1#DNS"><rdfs:subClassOf rdf:resource="http://example.org/f1#FinishStatus"/></owl:Class>
+  <owl:Class rdf:about="http://example.org/f1#DSQ"><rdfs:subClassOf rdf:resource="http://example.org/f1#FinishStatus"/></owl:Class>
+
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <rdf:Description rdf:about="http://example.org/f1#Finished"/>
+      <rdf:Description rdf:about="http://example.org/f1#DNF"/>
+      <rdf:Description rdf:about="http://example.org/f1#DNS"/>
+      <rdf:Description rdf:about="http://example.org/f1#DSQ"/>
+    </owl:members>
+  </owl:AllDisjointClasses>
+
+  <!-- Resulting/participation links -->
+  <owl:ObjectProperty rdf:about="http://example.org/f1#participationOfDriver">
+    <rdfs:domain rdf:resource="http://example.org/f1#Participation"/>
+    <rdfs:range  rdf:resource="http://example.org/f1#Driver"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://example.org/f1#participationForEntry">
+    <rdfs:domain rdf:resource="http://example.org/f1#Participation"/>
+    <rdfs:range  rdf:resource="http://example.org/f1#TeamEntry"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://example.org/f1#participationInSession">
+    <rdfs:domain rdf:resource="http://example.org/f1#Participation"/>
+    <rdfs:range  rdf:resource="http://example.org/f1#Session"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://example.org/f1#usedTyreSet">
+    <rdfs:domain rdf:resource="http://example.org/f1#Participation"/>
+    <rdfs:range  rdf:resource="http://example.org/f1#TyreSet"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://example.org/f1#hasFinishStatus">
+    <rdfs:domain rdf:resource="http://example.org/f1#Participation"/>
+    <rdfs:range  rdf:resource="http://example.org/f1#FinishStatus"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://example.org/f1#incursPenalty">
+    <rdfs:domain rdf:resource="http://example.org/f1#Participation"/>
+    <rdfs:range  rdf:resource="http://example.org/f1#Penalty"/>
+  </owl:ObjectProperty>
+
+</rdf:RDF>
