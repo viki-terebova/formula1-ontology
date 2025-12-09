@@ -49,16 +49,35 @@
 
   <!-- Minimal weather/flag enums -->
   <owl:Class rdf:about="http://example.org/f1#WeatherCondition">
-    <rdfs:subClassOf rdf:resource="http://example.org/f1#Quality"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/f1#Characteristics"/>
   </owl:Class>
   <owl:Class rdf:about="http://example.org/f1#DryWeather"><rdfs:subClassOf rdf:resource="http://example.org/f1#WeatherCondition"/></owl:Class>
   <owl:Class rdf:about="http://example.org/f1#WetWeather"><rdfs:subClassOf rdf:resource="http://example.org/f1#WeatherCondition"/></owl:Class>
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <rdf:Description rdf:about="http://example.org/f1#DryWeather"/>
+      <rdf:Description rdf:about="http://example.org/f1#WetWeather"/>
+    </owl:members>
+  </owl:AllDisjointClasses>
 
   <owl:Class rdf:about="http://example.org/f1#FlagStatus">
-    <rdfs:subClassOf rdf:resource="http://example.org/f1#Quality"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/f1#Characteristics"/>
   </owl:Class>
   <owl:Class rdf:about="http://example.org/f1#GreenFlag"><rdfs:subClassOf rdf:resource="http://example.org/f1#FlagStatus"/></owl:Class>
   <owl:Class rdf:about="http://example.org/f1#RedFlag"><rdfs:subClassOf rdf:resource="http://example.org/f1#FlagStatus"/></owl:Class>
   <owl:Class rdf:about="http://example.org/f1#YellowFlag"><rdfs:subClassOf rdf:resource="http://example.org/f1#FlagStatus"/></owl:Class>
+  <owl:Class rdf:about="http://example.org/f1#BlueFlag"><rdfs:subClassOf rdf:resource="http://example.org/f1#FlagStatus"/></owl:Class>
+  <owl:Class rdf:about="http://example.org/f1#BlackFlag"><rdfs:subClassOf rdf:resource="http://example.org/f1#FlagStatus"/></owl:Class>
+  <owl:Class rdf:about="http://example.org/f1#BlackAndWhiteFlag"><rdfs:subClassOf rdf:resource="http://example.org/f1#FlagStatus"/></owl:Class>
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <rdf:Description rdf:about="http://example.org/f1#GreenFlag"/>
+      <rdf:Description rdf:about="http://example.org/f1#RedFlag"/>
+      <rdf:Description rdf:about="http://example.org/f1#YellowFlag"/>
+      <rdf:Description rdf:about="http://example.org/f1#BlueFlag"/>
+      <rdf:Description rdf:about="http://example.org/f1#BlackFlag"/>
+      <rdf:Description rdf:about="http://example.org/f1#BlackAndWhiteFlag"/>
+    </owl:members>
+  </owl:AllDisjointClasses>
 
 </rdf:RDF>

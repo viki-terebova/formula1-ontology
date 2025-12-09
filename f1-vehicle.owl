@@ -30,12 +30,21 @@
 
   <!-- Tyre compounds (value partition lite) -->
   <owl:Class rdf:about="http://example.org/f1#TyreCompound">
-    <rdfs:subClassOf rdf:resource="http://example.org/f1#Quality"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/f1#Characteristics"/>
   </owl:Class>
   <owl:Class rdf:about="http://example.org/f1#SoftCompound"><rdfs:subClassOf rdf:resource="http://example.org/f1#TyreCompound"/></owl:Class>
   <owl:Class rdf:about="http://example.org/f1#MediumCompound"><rdfs:subClassOf rdf:resource="http://example.org/f1#TyreCompound"/></owl:Class>
   <owl:Class rdf:about="http://example.org/f1#HardCompound"><rdfs:subClassOf rdf:resource="http://example.org/f1#TyreCompound"/></owl:Class>
   <owl:Class rdf:about="http://example.org/f1#IntermediateCompound"><rdfs:subClassOf rdf:resource="http://example.org/f1#TyreCompound"/></owl:Class>
   <owl:Class rdf:about="http://example.org/f1#WetCompound"><rdfs:subClassOf rdf:resource="http://example.org/f1#TyreCompound"/></owl:Class>
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <rdf:Description rdf:about="http://example.org/f1#SoftCompound"/>
+      <rdf:Description rdf:about="http://example.org/f1#MediumCompound"/>
+      <rdf:Description rdf:about="http://example.org/f1#HardCompound"/>
+      <rdf:Description rdf:about="http://example.org/f1#IntermediateCompound"/>
+      <rdf:Description rdf:about="http://example.org/f1#WetCompound"/>
+    </owl:members>
+  </owl:AllDisjointClasses>
 
 </rdf:RDF>

@@ -23,7 +23,7 @@
   </owl:Class>
 
   <owl:Class rdf:about="http://example.org/f1#FinishStatus">
-    <rdfs:subClassOf rdf:resource="http://example.org/f1#Quality"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/f1#Characteristics"/>
   </owl:Class>
   <owl:Class rdf:about="http://example.org/f1#Finished"><rdfs:subClassOf rdf:resource="http://example.org/f1#FinishStatus"/></owl:Class>
   <owl:Class rdf:about="http://example.org/f1#DNF"><rdfs:subClassOf rdf:resource="http://example.org/f1#FinishStatus"/></owl:Class>

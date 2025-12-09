@@ -30,7 +30,7 @@
   <owl:Class rdf:about="http://example.org/f1#CompetitionAsset">
     <rdfs:subClassOf rdf:resource="http://example.org/f1#F1"/>
   </owl:Class>
-  <owl:Class rdf:about="http://example.org/f1#Quality">
+  <owl:Class rdf:about="http://example.org/f1#Characteristics">
     <rdfs:subClassOf rdf:resource="http://example.org/f1#F1"/>
   </owl:Class>
 
@@ -53,7 +53,7 @@
       <rdf:Description rdf:about="http://example.org/f1#Location"/>
       <rdf:Description rdf:about="http://example.org/f1#CompetitionAsset"/>
       <rdf:Description rdf:about="http://example.org/f1#EventThing"/>
-      <rdf:Description rdf:about="http://example.org/f1#Quality"/>
+      <rdf:Description rdf:about="http://example.org/f1#Characteristics"/>
     </owl:members>
   </owl:AllDisjointClasses>
 
