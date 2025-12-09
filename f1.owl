@@ -13,6 +13,7 @@
     <owl:imports rdf:resource="http://example.org/f1/teams"/>
     <owl:imports rdf:resource="http://example.org/f1/vehicle"/>
     <owl:imports rdf:resource="http://example.org/f1/competition"/>
+    <owl:imports rdf:resource="http://example.org/f1/properties"/>
     <owl:imports rdf:resource="http://example.org/f1/individuals"/>
   </owl:Ontology>
 

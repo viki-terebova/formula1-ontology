@@ -12,6 +12,7 @@
     <owl:imports rdf:resource="http://example.org/f1/events"/>
     <owl:imports rdf:resource="http://example.org/f1/vehicle"/>
     <owl:imports rdf:resource="http://example.org/f1/teams"/>
+    <owl:imports rdf:resource="http://example.org/f1/properties"/>
   </owl:Ontology>
 
   <owl:Class rdf:about="http://example.org/f1#Participation">
@@ -37,31 +38,5 @@
       <rdf:Description rdf:about="http://example.org/f1#DSQ"/>
     </owl:members>
   </owl:AllDisjointClasses>
-
-  <!-- Resulting/participation links -->
-  <owl:ObjectProperty rdf:about="http://example.org/f1#participationOfDriver">
-    <rdfs:domain rdf:resource="http://example.org/f1#Participation"/>
-    <rdfs:range  rdf:resource="http://example.org/f1#Driver"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://example.org/f1#participationForEntry">
-    <rdfs:domain rdf:resource="http://example.org/f1#Participation"/>
-    <rdfs:range  rdf:resource="http://example.org/f1#TeamEntry"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://example.org/f1#participationInSession">
-    <rdfs:domain rdf:resource="http://example.org/f1#Participation"/>
-    <rdfs:range  rdf:resource="http://example.org/f1#Session"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://example.org/f1#usedTyreSet">
-    <rdfs:domain rdf:resource="http://example.org/f1#Participation"/>
-    <rdfs:range  rdf:resource="http://example.org/f1#TyreSet"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://example.org/f1#hasFinishStatus">
-    <rdfs:domain rdf:resource="http://example.org/f1#Participation"/>
-    <rdfs:range  rdf:resource="http://example.org/f1#FinishStatus"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://example.org/f1#incursPenalty">
-    <rdfs:domain rdf:resource="http://example.org/f1#Participation"/>
-    <rdfs:range  rdf:resource="http://example.org/f1#Penalty"/>
-  </owl:ObjectProperty>
 
 </rdf:RDF>

@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1765313656233" name="http://example.org/f1" uri="f1.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1765313656233" name="http://example.org/f1/competition" uri="f1-competition.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1765313656233" name="http://example.org/f1/core" uri="f1-core.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1765313656233" name="http://example.org/f1/events" uri="f1-events.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1765313656233" name="http://example.org/f1/individuals" uri="f1-individuals.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1765313656233" name="http://example.org/f1/teams" uri="f1-teams.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1765313656233" name="http://example.org/f1/vehicle" uri="f1-vehicle.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1765314904605" name="http://example.org/f1" uri="f1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1765314904605" name="http://example.org/f1/competition" uri="f1-competition.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1765314904605" name="http://example.org/f1/core" uri="f1-core.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1765314904605" name="http://example.org/f1/events" uri="f1-events.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1765314904605" name="http://example.org/f1/individuals" uri="f1-individuals.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1765314904605" name="http://example.org/f1/properties" uri="f1-properties.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1765314904605" name="http://example.org/f1/teams" uri="f1-teams.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1765314904605" name="http://example.org/f1/vehicle" uri="f1-vehicle.owl"/>
     </group>
 </catalog>

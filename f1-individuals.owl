@@ -11,6 +11,7 @@
     <owl:imports rdf:resource="http://example.org/f1/core"/>
     <owl:imports rdf:resource="http://example.org/f1/events"/>
     <owl:imports rdf:resource="http://example.org/f1/teams"/>
+    <owl:imports rdf:resource="http://example.org/f1/properties"/>
   </owl:Ontology>
 
   <!-- Season -->
@@ -69,13 +70,15 @@
     <f1:enteredBy rdf:resource="http://example.org/f1#MercedesAMGPetronas"/>
     <f1:entryInSeason rdf:resource="http://example.org/f1#Season2025"/>
     <f1:hasDriver rdf:resource="http://example.org/f1#GeorgeRussell"/>
+    <f1:hasDriver rdf:resource="http://example.org/f1#KimiAntonelli"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://example.org/f1#RedBullEntry2025">
     <rdf:type rdf:resource="http://example.org/f1#TeamEntry"/>
     <f1:enteredBy rdf:resource="http://example.org/f1#OracleRedBullRacing"/>
     <f1:entryInSeason rdf:resource="http://example.org/f1#Season2025"/>
     <f1:hasDriver rdf:resource="http://example.org/f1#MaxVerstappen"/>
-    <f1:hasDriver rdf:resource="http://example.org/f1#SergioPerez"/>
+    <f1:hasDriver rdf:resource="http://example.org/f1#LiamLawson"/>
+    <f1:hasDriver rdf:resource="http://example.org/f1#YukiTsunoda"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://example.org/f1#FerrariEntry2025">
     <rdf:type rdf:resource="http://example.org/f1#TeamEntry"/>
@@ -103,6 +106,10 @@
     <f1:drivesForEntry rdf:resource="http://example.org/f1#MercedesEntry2024"/>
     <f1:drivesForEntry rdf:resource="http://example.org/f1#MercedesEntry2025"/>
   </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://example.org/f1#KimiAntonelli">
+    <rdf:type rdf:resource="http://example.org/f1#Driver"/>
+    <f1:drivesForEntry rdf:resource="http://example.org/f1#MercedesEntry2025"/>
+  </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://example.org/f1#MaxVerstappen">
     <rdf:type rdf:resource="http://example.org/f1#Driver"/>
     <f1:drivesForEntry rdf:resource="http://example.org/f1#RedBullEntry2024"/>
@@ -111,6 +118,13 @@
   <owl:NamedIndividual rdf:about="http://example.org/f1#SergioPerez">
     <rdf:type rdf:resource="http://example.org/f1#Driver"/>
     <f1:drivesForEntry rdf:resource="http://example.org/f1#RedBullEntry2024"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://example.org/f1#LiamLawson">
+    <rdf:type rdf:resource="http://example.org/f1#Driver"/>
+    <f1:drivesForEntry rdf:resource="http://example.org/f1#RedBullEntry2025"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://example.org/f1#YukiTsunoda">
+    <rdf:type rdf:resource="http://example.org/f1#Driver"/>
     <f1:drivesForEntry rdf:resource="http://example.org/f1#RedBullEntry2025"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://example.org/f1#CharlesLeclerc">

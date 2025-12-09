@@ -6,5 +6,6 @@
   <uri name="http://example.org/f1/teams"     uri="f1-teams.owl"/>
   <uri name="http://example.org/f1/vehicle"   uri="f1-vehicle.owl"/>
   <uri name="http://example.org/f1/competition" uri="f1-competition.owl"/>
+  <uri name="http://example.org/f1/properties" uri="f1-properties.owl"/>
   <uri name="http://example.org/f1/individuals" uri="f1-individuals.owl"/>
 </catalog>

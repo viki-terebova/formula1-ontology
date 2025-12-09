@@ -9,6 +9,7 @@
   <owl:Ontology rdf:about="http://example.org/f1/vehicle">
     <rdfs:label>F1 Vehicle</rdfs:label>
     <owl:imports rdf:resource="http://example.org/f1/core"/>
+    <owl:imports rdf:resource="http://example.org/f1/properties"/>
   </owl:Ontology>
 
   <owl:Class rdf:about="http://example.org/f1#Car">
@@ -27,20 +28,6 @@
     <rdfs:subClassOf rdf:resource="http://example.org/f1#CompetitionAsset"/>
   </owl:Class>
 
-  <owl:ObjectProperty rdf:about="http://example.org/f1#hasChassis">
-    <rdfs:domain rdf:resource="http://example.org/f1#Car"/>
-    <rdfs:range  rdf:resource="http://example.org/f1#Chassis"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://example.org/f1#hasPowerUnit">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:domain rdf:resource="http://example.org/f1#Car"/>
-    <rdfs:range  rdf:resource="http://example.org/f1#PowerUnit"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://example.org/f1#hasGearbox">
-    <rdfs:domain rdf:resource="http://example.org/f1#Car"/>
-    <rdfs:range  rdf:resource="http://example.org/f1#Gearbox"/>
-  </owl:ObjectProperty>
-
   <!-- Tyre compounds (value partition lite) -->
   <owl:Class rdf:about="http://example.org/f1#TyreCompound">
     <rdfs:subClassOf rdf:resource="http://example.org/f1#Quality"/>
@@ -50,10 +37,5 @@
   <owl:Class rdf:about="http://example.org/f1#HardCompound"><rdfs:subClassOf rdf:resource="http://example.org/f1#TyreCompound"/></owl:Class>
   <owl:Class rdf:about="http://example.org/f1#IntermediateCompound"><rdfs:subClassOf rdf:resource="http://example.org/f1#TyreCompound"/></owl:Class>
   <owl:Class rdf:about="http://example.org/f1#WetCompound"><rdfs:subClassOf rdf:resource="http://example.org/f1#TyreCompound"/></owl:Class>
-
-  <owl:ObjectProperty rdf:about="http://example.org/f1#usesTyreCompound">
-    <rdfs:domain rdf:resource="http://example.org/f1#TyreSet"/>
-    <rdfs:range  rdf:resource="http://example.org/f1#TyreCompound"/>
-  </owl:ObjectProperty>
 
 </rdf:RDF>

@@ -9,6 +9,7 @@
   <owl:Ontology rdf:about="http://example.org/f1/events">
     <rdfs:label>F1 Events</rdfs:label>
     <owl:imports rdf:resource="http://example.org/f1/core"/>
+    <owl:imports rdf:resource="http://example.org/f1/properties"/>
   </owl:Ontology>
 
   <owl:Class rdf:about="http://example.org/f1#Season">
@@ -46,33 +47,6 @@
     </owl:members>
   </owl:AllDisjointClasses>
 
-  <!-- Event properties -->
-  <owl:ObjectProperty rdf:about="http://example.org/f1#partOfSeason">
-    <rdfs:domain rdf:resource="http://example.org/f1#EventThing"/>
-    <rdfs:range  rdf:resource="http://example.org/f1#Season"/>
-  </owl:ObjectProperty>
-
-  <owl:ObjectProperty rdf:about="http://example.org/f1#hasGrandPrix">
-    <rdfs:domain rdf:resource="http://example.org/f1#Season"/>
-    <rdfs:range  rdf:resource="http://example.org/f1#GrandPrix"/>
-  </owl:ObjectProperty>
-
-  <owl:ObjectProperty rdf:about="http://example.org/f1#hostsAtCircuit">
-    <rdfs:domain rdf:resource="http://example.org/f1#GrandPrix"/>
-    <rdfs:range  rdf:resource="http://example.org/f1#Circuit"/>
-  </owl:ObjectProperty>
-
-  <owl:ObjectProperty rdf:about="http://example.org/f1#hasSession">
-    <rdfs:domain rdf:resource="http://example.org/f1#GrandPrix"/>
-    <rdfs:range  rdf:resource="http://example.org/f1#Session"/>
-  </owl:ObjectProperty>
-
-  <owl:ObjectProperty rdf:about="http://example.org/f1#sessionOfEvent">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:domain rdf:resource="http://example.org/f1#Session"/>
-    <rdfs:range  rdf:resource="http://example.org/f1#GrandPrix"/>
-  </owl:ObjectProperty>
-
   <!-- Minimal weather/flag enums -->
   <owl:Class rdf:about="http://example.org/f1#WeatherCondition">
     <rdfs:subClassOf rdf:resource="http://example.org/f1#Quality"/>
@@ -86,14 +60,5 @@
   <owl:Class rdf:about="http://example.org/f1#GreenFlag"><rdfs:subClassOf rdf:resource="http://example.org/f1#FlagStatus"/></owl:Class>
   <owl:Class rdf:about="http://example.org/f1#RedFlag"><rdfs:subClassOf rdf:resource="http://example.org/f1#FlagStatus"/></owl:Class>
   <owl:Class rdf:about="http://example.org/f1#YellowFlag"><rdfs:subClassOf rdf:resource="http://example.org/f1#FlagStatus"/></owl:Class>
-
-  <owl:ObjectProperty rdf:about="http://example.org/f1#hasWeather">
-    <rdfs:domain rdf:resource="http://example.org/f1#Session"/>
-    <rdfs:range  rdf:resource="http://example.org/f1#WeatherCondition"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://example.org/f1#hasFlagStatus">
-    <rdfs:domain rdf:resource="http://example.org/f1#Session"/>
-    <rdfs:range  rdf:resource="http://example.org/f1#FlagStatus"/>
-  </owl:ObjectProperty>
 
 </rdf:RDF>

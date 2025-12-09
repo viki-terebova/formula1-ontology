@@ -57,10 +57,4 @@
     </owl:members>
   </owl:AllDisjointClasses>
 
-  <!-- A few generic object properties used across modules -->
-  <owl:ObjectProperty rdf:about="http://example.org/f1#locatedInCountry">
-    <rdfs:domain rdf:resource="http://example.org/f1#Location"/>
-    <rdfs:range rdf:resource="http://example.org/f1#Country"/>
-  </owl:ObjectProperty>
-
 </rdf:RDF>
