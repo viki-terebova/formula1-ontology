@@ -27,6 +27,9 @@
   <owl:Class rdf:about="http://example.org/f1#EventThing">
     <rdfs:subClassOf rdf:resource="http://example.org/f1#F1"/>
   </owl:Class>
+  <owl:Class rdf:about="http://example.org/f1#TeamEntry">
+    <rdfs:subClassOf rdf:resource="http://example.org/f1#EventThing"/>
+  </owl:Class>
   <owl:Class rdf:about="http://example.org/f1#CompetitionAsset">
     <rdfs:subClassOf rdf:resource="http://example.org/f1#F1"/>
   </owl:Class>

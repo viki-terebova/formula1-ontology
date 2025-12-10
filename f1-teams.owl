@@ -13,7 +13,4 @@
     <owl:imports rdf:resource="http://example.org/f1/properties"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="http://example.org/f1#TeamEntry">
-    <rdfs:subClassOf rdf:resource="http://example.org/f1#EventThing"/>
-  </owl:Class>
 </rdf:RDF>

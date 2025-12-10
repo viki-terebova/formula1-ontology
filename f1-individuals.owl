@@ -17,23 +17,94 @@
   <!-- Season -->
   <owl:NamedIndividual rdf:about="http://example.org/f1#Season2024">
     <rdf:type rdf:resource="http://example.org/f1#Season"/>
+    <f1:hasCircuit rdf:resource="http://example.org/f1#SilverstoneCircuit"/>
+    <f1:hasCircuit rdf:resource="http://example.org/f1#MonzaCircuit"/>
+    <f1:hasCircuit rdf:resource="http://example.org/f1#SuzukaCircuit"/>
+    <f1:hasCircuit rdf:resource="http://example.org/f1#InterlagosCircuit"/>
+    <f1:hasCircuit rdf:resource="http://example.org/f1#Hungaroring"/>
+    <f1:hasCircuit rdf:resource="http://example.org/f1#RedBullRing"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://example.org/f1#Season2025">
     <rdf:type rdf:resource="http://example.org/f1#Season"/>
+    <f1:hasCircuit rdf:resource="http://example.org/f1#SilverstoneCircuit"/>
+    <f1:hasCircuit rdf:resource="http://example.org/f1#MonzaCircuit"/>
+    <f1:hasCircuit rdf:resource="http://example.org/f1#SuzukaCircuit"/>
+    <f1:hasCircuit rdf:resource="http://example.org/f1#InterlagosCircuit"/>
+    <f1:hasCircuit rdf:resource="http://example.org/f1#Hungaroring"/>
+    <f1:hasCircuit rdf:resource="http://example.org/f1#RedBullRing"/>
+  </owl:NamedIndividual>
+
+  <!-- Countries -->
+  <owl:NamedIndividual rdf:about="http://example.org/f1#UnitedKingdom">
+    <rdf:type rdf:resource="http://example.org/f1#Country"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://example.org/f1#Italy">
+    <rdf:type rdf:resource="http://example.org/f1#Country"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://example.org/f1#Japan">
+    <rdf:type rdf:resource="http://example.org/f1#Country"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://example.org/f1#Brazil">
+    <rdf:type rdf:resource="http://example.org/f1#Country"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://example.org/f1#Hungary">
+    <rdf:type rdf:resource="http://example.org/f1#Country"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://example.org/f1#Austria">
+    <rdf:type rdf:resource="http://example.org/f1#Country"/>
+  </owl:NamedIndividual>
+
+  <!-- Circuits -->
+  <owl:NamedIndividual rdf:about="http://example.org/f1#SilverstoneCircuit">
+    <rdf:type rdf:resource="http://example.org/f1#Circuit"/>
+    <f1:locatedInCountry rdf:resource="http://example.org/f1#UnitedKingdom"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://example.org/f1#MonzaCircuit">
+    <rdf:type rdf:resource="http://example.org/f1#Circuit"/>
+    <f1:locatedInCountry rdf:resource="http://example.org/f1#Italy"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://example.org/f1#SuzukaCircuit">
+    <rdf:type rdf:resource="http://example.org/f1#Circuit"/>
+    <f1:locatedInCountry rdf:resource="http://example.org/f1#Japan"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://example.org/f1#InterlagosCircuit">
+    <rdf:type rdf:resource="http://example.org/f1#Circuit"/>
+    <f1:locatedInCountry rdf:resource="http://example.org/f1#Brazil"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://example.org/f1#Hungaroring">
+    <rdf:type rdf:resource="http://example.org/f1#Circuit"/>
+    <f1:locatedInCountry rdf:resource="http://example.org/f1#Hungary"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://example.org/f1#RedBullRing">
+    <rdf:type rdf:resource="http://example.org/f1#Circuit"/>
+    <f1:locatedInCountry rdf:resource="http://example.org/f1#Austria"/>
   </owl:NamedIndividual>
 
   <!-- Teams -->
   <owl:NamedIndividual rdf:about="http://example.org/f1#MercedesAMGPetronas">
     <rdf:type rdf:resource="http://example.org/f1#Team"/>
+    <f1:competesInSeason rdf:resource="http://example.org/f1#Season2024"/>
+    <f1:competesInSeason rdf:resource="http://example.org/f1#Season2025"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://example.org/f1#OracleRedBullRacing">
     <rdf:type rdf:resource="http://example.org/f1#Team"/>
+    <f1:competesInSeason rdf:resource="http://example.org/f1#Season2024"/>
+    <f1:competesInSeason rdf:resource="http://example.org/f1#Season2025"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://example.org/f1#ScuderiaFerrari">
     <rdf:type rdf:resource="http://example.org/f1#Team"/>
+    <f1:competesInSeason rdf:resource="http://example.org/f1#Season2024"/>
+    <f1:competesInSeason rdf:resource="http://example.org/f1#Season2025"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://example.org/f1#McLarenF1Team">
     <rdf:type rdf:resource="http://example.org/f1#Team"/>
+    <f1:competesInSeason rdf:resource="http://example.org/f1#Season2024"/>
+    <f1:competesInSeason rdf:resource="http://example.org/f1#Season2025"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://example.org/f1#WilliamsRacing">
+    <rdf:type rdf:resource="http://example.org/f1#Team"/>
+    <f1:competesInSeason rdf:resource="http://example.org/f1#Season2024"/>
+    <f1:competesInSeason rdf:resource="http://example.org/f1#Season2025"/>
   </owl:NamedIndividual>
 
   <!-- Team entries -->
@@ -94,57 +165,87 @@
     <f1:hasDriver rdf:resource="http://example.org/f1#LandoNorris"/>
     <f1:hasDriver rdf:resource="http://example.org/f1#OscarPiastri"/>
   </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://example.org/f1#WilliamsEntry2024">
+    <rdf:type rdf:resource="http://example.org/f1#TeamEntry"/>
+    <f1:enteredBy rdf:resource="http://example.org/f1#WilliamsRacing"/>
+    <f1:entryInSeason rdf:resource="http://example.org/f1#Season2024"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://example.org/f1#WilliamsEntry2025">
+    <rdf:type rdf:resource="http://example.org/f1#TeamEntry"/>
+    <f1:enteredBy rdf:resource="http://example.org/f1#WilliamsRacing"/>
+    <f1:entryInSeason rdf:resource="http://example.org/f1#Season2025"/>
+    <f1:hasDriver rdf:resource="http://example.org/f1#CarlosSainz"/>
+  </owl:NamedIndividual>
 
   <!-- Drivers -->
   <owl:NamedIndividual rdf:about="http://example.org/f1#LewisHamilton">
     <rdf:type rdf:resource="http://example.org/f1#Driver"/>
     <f1:drivesForEntry rdf:resource="http://example.org/f1#MercedesEntry2024"/>
     <f1:drivesForEntry rdf:resource="http://example.org/f1#FerrariEntry2025"/>
+    <f1:participatesInSeason rdf:resource="http://example.org/f1#Season2024"/>
+    <f1:participatesInSeason rdf:resource="http://example.org/f1#Season2025"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://example.org/f1#GeorgeRussell">
     <rdf:type rdf:resource="http://example.org/f1#Driver"/>
     <f1:drivesForEntry rdf:resource="http://example.org/f1#MercedesEntry2024"/>
     <f1:drivesForEntry rdf:resource="http://example.org/f1#MercedesEntry2025"/>
+    <f1:participatesInSeason rdf:resource="http://example.org/f1#Season2024"/>
+    <f1:participatesInSeason rdf:resource="http://example.org/f1#Season2025"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://example.org/f1#KimiAntonelli">
     <rdf:type rdf:resource="http://example.org/f1#Driver"/>
     <f1:drivesForEntry rdf:resource="http://example.org/f1#MercedesEntry2025"/>
+    <f1:participatesInSeason rdf:resource="http://example.org/f1#Season2025"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://example.org/f1#MaxVerstappen">
     <rdf:type rdf:resource="http://example.org/f1#Driver"/>
     <f1:drivesForEntry rdf:resource="http://example.org/f1#RedBullEntry2024"/>
     <f1:drivesForEntry rdf:resource="http://example.org/f1#RedBullEntry2025"/>
+    <f1:participatesInSeason rdf:resource="http://example.org/f1#Season2024"/>
+    <f1:participatesInSeason rdf:resource="http://example.org/f1#Season2025"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://example.org/f1#SergioPerez">
     <rdf:type rdf:resource="http://example.org/f1#Driver"/>
     <f1:drivesForEntry rdf:resource="http://example.org/f1#RedBullEntry2024"/>
+    <f1:participatesInSeason rdf:resource="http://example.org/f1#Season2024"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://example.org/f1#LiamLawson">
     <rdf:type rdf:resource="http://example.org/f1#Driver"/>
     <f1:drivesForEntry rdf:resource="http://example.org/f1#RedBullEntry2025"/>
+    <f1:participatesInSeason rdf:resource="http://example.org/f1#Season2025"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://example.org/f1#YukiTsunoda">
     <rdf:type rdf:resource="http://example.org/f1#Driver"/>
     <f1:drivesForEntry rdf:resource="http://example.org/f1#RedBullEntry2025"/>
+    <f1:participatesInSeason rdf:resource="http://example.org/f1#Season2025"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://example.org/f1#CharlesLeclerc">
     <rdf:type rdf:resource="http://example.org/f1#Driver"/>
     <f1:drivesForEntry rdf:resource="http://example.org/f1#FerrariEntry2024"/>
     <f1:drivesForEntry rdf:resource="http://example.org/f1#FerrariEntry2025"/>
+    <f1:participatesInSeason rdf:resource="http://example.org/f1#Season2024"/>
+    <f1:participatesInSeason rdf:resource="http://example.org/f1#Season2025"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://example.org/f1#CarlosSainz">
     <rdf:type rdf:resource="http://example.org/f1#Driver"/>
     <f1:drivesForEntry rdf:resource="http://example.org/f1#FerrariEntry2024"/>
+    <f1:drivesForEntry rdf:resource="http://example.org/f1#WilliamsEntry2025"/>
+    <f1:participatesInSeason rdf:resource="http://example.org/f1#Season2024"/>
+    <f1:participatesInSeason rdf:resource="http://example.org/f1#Season2025"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://example.org/f1#LandoNorris">
     <rdf:type rdf:resource="http://example.org/f1#Driver"/>
     <f1:drivesForEntry rdf:resource="http://example.org/f1#McLarenEntry2024"/>
     <f1:drivesForEntry rdf:resource="http://example.org/f1#McLarenEntry2025"/>
+    <f1:participatesInSeason rdf:resource="http://example.org/f1#Season2024"/>
+    <f1:participatesInSeason rdf:resource="http://example.org/f1#Season2025"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://example.org/f1#OscarPiastri">
     <rdf:type rdf:resource="http://example.org/f1#Driver"/>
     <f1:drivesForEntry rdf:resource="http://example.org/f1#McLarenEntry2024"/>
     <f1:drivesForEntry rdf:resource="http://example.org/f1#McLarenEntry2025"/>
+    <f1:participatesInSeason rdf:resource="http://example.org/f1#Season2024"/>
+    <f1:participatesInSeason rdf:resource="http://example.org/f1#Season2025"/>
   </owl:NamedIndividual>
 
 </rdf:RDF>
